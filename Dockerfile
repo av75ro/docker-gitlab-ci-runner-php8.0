@@ -35,3 +35,4 @@ RUN npm install --global yarn
 
 RUN docker-php-ext-configure pcntl --enable-pcntl
 RUN docker-php-ext-install pcntl
+ADD php.ini /usr/local/etc/php/php.ini
