@@ -27,7 +27,6 @@ ENV COMPOSER_VERSION 2.0.9
 # Install Composer
 RUN php /tmp/composer-setup.php --no-ansi --install-dir=/usr/local/bin --filename=composer --version=${COMPOSER_VERSION} && rm -rf /tmp/composer-setup.php
 
-ADD php.ini /usr/local/etc/php/php.ini
 
 RUN curl -fsSL https://deb.nodesource.com/setup_14.x | bash -
 
